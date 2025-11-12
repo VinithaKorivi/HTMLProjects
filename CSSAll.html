@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <title>CSS Position Example</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      height: 2000px; /* for scrolling effect */
+      margin: 0;
+      padding: 20px;
+    }
+
+    .box {
+      width: 200px;
+      height: 100px;
+      color: white;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+      line-height: 100px;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    /* 1. Static (default) */
+    .static {
+      position: static;
+      background-color: gray;
+    }
+
+    /* 2. Relative */
+    .relative {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      background-color: steelblue;
+    }
+
+    /* 3. Absolute */
+    .absolute-container {
+      position: relative; /* important! parent for absolute */
+      background-color: #ddd;
+      height: 150px;
+      padding: 10px;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: tomato;
+    }
+
+    /* 4. Fixed */
+    .fixed {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: green;
+    }
+
+    /* 5. Sticky */
+    .sticky {
+      position: sticky;
+      top: 0;
+      background-color: purple;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Position Examples</h2>
+
+  <div class="box static">Static</div>
+
+  <div class="box relative">Relative (moved ↓ and →)</div>
+
+  <div class="absolute-container">
+    Parent (Relative)
+    <div class="box absolute">Absolute</div>
+  </div>
+
+  <div class="box sticky">Sticky (sticks to top when scrolling)</div>
+
+  <p>Scroll down to see how the sticky and fixed elements behave...</p>
+
+  <div class="box fixed">Fixed (bottom right)</div>
+
+</body>
+</html>
