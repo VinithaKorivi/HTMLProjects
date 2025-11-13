@@ -1,12 +1,22 @@
 <html>
     <head>
         <title>Forms</title>
+        <style>
+          input[type="text"]:focus
+          {
+            color: blue;
+            background-color: aqua;
+            border-radius: 10px;
+            box-shadow: ;
+          }
+          
+        </style>
     </head>
     <body>
         <div>
         <form action="">
-          <label for="">UserName</label>
-          <input type="text"><br><br>
+          <label id="a">UserName</label>
+          <input type="text" autofocus placeholder="Enter UserName"><br><br>
           <label for="">Permanent Address:</label>
           <textarea rows="4" cols="20"></textarea><br><br>
           <label for="">Languages Known</label><br>
@@ -36,12 +46,27 @@
                 </select>
             </form>
         </div>
-
-
-
         <div>
             <label for="">UserName</label>
-            <input type="text" name="" placeholder="Enter Your Name">
+            <input type="text" name="" placeholder="Enter Your Name"><br><br><br>
+        </div> 
+        <div>
+            <form>
+           <input type="radio" name="gender" value="male"> Male<br>
+           <input type="radio" name="gender" value="female"> Female<br>
+           <input type="radio" name="gender" value="other"> Other
+            </form>
         </div>
+        <form>
+      <p>Select your education level:</p>
+      <input type="radio" id="highschool" name="education" value="highschool">
+      <label for="highschool">High School</label><br>
+
+      <input type="radio" id="bachelors" name="education" value="bachelors">
+      <label for="bachelors">Bachelor’s</label><br>
+
+      <input type="radio" id="masters" name="education" value="masters">
+      <label for="masters">Master’s</label>
+</form>
     </body>
 </html>
