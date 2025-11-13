@@ -1,0 +1,12 @@
+class Concat 
+{
+	public static void main(String[] args) 
+	{
+		int a=3;
+		int b=4;
+		System.out.println(a++>=3&&a--<=4);
+		System.out.println(b++>=3&&b--<=4);
+		System.out.println(a);
+		System.out.println(b);
+	}
+}

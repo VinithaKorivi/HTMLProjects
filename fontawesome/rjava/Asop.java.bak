@@ -1,0 +1,14 @@
+class Asop 
+{
+	public static void main(String[] args) 
+	{
+		int a=2000;
+		int b=6789;
+		int c=20;
+		System.out.println(a+=b+=c);
+		System.out.println(a-=b-=c);
+		System.out.println(a*=b*=c);
+		System.out.println(a%=c);
+		System.out.println(a/=c);
+	}
+}

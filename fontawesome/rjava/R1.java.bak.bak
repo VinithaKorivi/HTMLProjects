@@ -1,0 +1,22 @@
+ class R1 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("CLASS MAIN STARTS");
+		System.out.println("CLASS  STARTS");
+		System.out.println(" MAIN STARTS");
+		System.out.println("CLASS MAIN ");
+		System.out.println(" STARTS");
+	}
+}
+public class R
+{
+	public static void main(Strings[] args)
+	{
+		System.out.println("what baby");
+		System.out.println("what are you doing");
+		System.out.println(" iam studying");
+		System.out.println("what about you");
+	}
+
+}

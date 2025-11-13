@@ -1,0 +1,16 @@
+class Datatypes 
+{
+	public static void main(String[] args) 
+	{
+		int a=10;
+		System.out.println(a);
+		float height=5.889980393f;
+		System.out.println(height);
+		double value=6.888885324343442993d;
+		System.out.println(value);
+		char name='v';
+		System.out.println(name);
+		String nam="what are you dolng?";
+        System.out.println(nam); 
+	}
+}

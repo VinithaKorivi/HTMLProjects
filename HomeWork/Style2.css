@@ -1,0 +1,70 @@
+body
+{
+	background: yellow url(bunch.jpg) repeat;
+	background-attachment: ;
+	background-size: ;
+}
+#rf
+{
+	background: linear-gradient(45deg,orange,yellow,black,green,white,pink,blue,violet,blue);
+	width: 300px;
+	margin: 300px auto;
+	padding: 30px;
+	border-radius: 10px 20px 10px 10px;
+	top: 17px;
+	left: 340px;
+	position: relative;
+	box-shadow: 10px solid red;
+	height: 400px;
+}
+.fg input[type="text"],
+.fg input[type="number"],
+textarea
+{
+  border:3px solid red;
+  outline: none;
+  margin-bottom: 5px;
+  height:30px ;
+  width: 300px;
+  background: transparent;
+  font-size: 20px;
+  font-family: cursive;
+}
+textarea
+{
+	height: 56px;
+	margin-bottom: 30px;
+}
+::placeholder
+{
+	color: green;
+}
+.fg input[type="submit"]
+{
+	background: radial-gradient(ellipse,green,blue,cyan,lightpink,limegreen,orange);
+	border:2px dashed red;
+	border-radius: 5px;
+	height: 40px;
+    width: 150px;
+}
+.fg input[type="reset"]
+{
+    background: radial-gradient(circle,green,blue,cyan,lightpink,limegreen,orange);
+	border:2px dashed red;
+	border-radius: 5px;
+	height: 40px;
+    width: 140px;	
+}
+#one
+{
+	margin-top: -20px;
+	margin-bottom: 20px;
+	margin-left: 125px;
+}
+#one>.fa-solid
+{
+	color: green;
+	font-size: 40px;
+	border-radius: 100%;
+	border: 5px double black;
+}

@@ -1,0 +1,12 @@
+class  Concatination
+{
+	public static void main(String[] args) 
+	{
+        int a=2;
+		int b=2
+		a=a++ + a-- + a++ + a-- ;
+		System.out.println(a);
+		b=(a*b) + (a*b) - (a*b) + (a*b) -(a*b)*(a*b);
+		System.out.println(b);
+	}
+}

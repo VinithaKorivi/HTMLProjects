@@ -1,0 +1,27 @@
+
+    body{
+        background: yellow url("https://sp.yimg.com/ib/th/id/OIP.qIE3yDuXgav8rkbl3dJuxwHaG2?pid=Api&w=148&h=148&c=7&dpr=2&rs=1") no-repeat;
+        background-size: cover;
+   }
+   #reg-form{
+    background: linear-gradient(45deg, red green blue yellow white);
+    text-align: center;
+    width: 250px;
+    padding: 30px;
+    margin: 100px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px, white;
+    position: relative;
+    left: 340px;
+    top: 17px;
+   }
+  .a input [type="text"],  .a input [type="number"],  .a input [type="password"] textarea{
+    margin-bottom: 6px;
+    height: 26px;
+    width: 240px;
+    background: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 14;
+    font-family: comic sans-serif;
+  }

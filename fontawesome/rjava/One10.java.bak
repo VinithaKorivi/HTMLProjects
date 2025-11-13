@@ -1,0 +1,12 @@
+class One10 
+{
+	public static void main(String[] args) 
+	{
+		count=0;
+		for (int i=10;i<=30 ;i++ )
+		{
+			count =++i + ++i;
+		System.out.println(i);
+		}
+	}
+}

@@ -1,0 +1,17 @@
+class A 
+{ 
+	static int i=10;
+	int j=20;
+	A k=;
+	String str="carrot";
+	char r='a';
+	public static void main(String[] args) 
+	{
+		A f1=new A();
+		System.out.println(A.i);
+		System.out.println(f1.j);
+		System.out.println(f1.k);
+		System.out.println(f1.str);
+		System.out.println(f1.r);
+	}
+}
