@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>CSS Transforms</title>
+        <style>
+            div
+            {
+                background-color: yellow;
+                width: 200px;
+                height: 200px;
+                border-bottom: 5px solid green;
+                border-left: 5px solid red;
+                border-top: 5px solid blue;
+                border-right: 5px solid violet; 
+                margin-left: 600px;
+               margin-top: 200px;
+            }
+            div:hover{
+               /* transform: rotateX(180deg);
+               transform: rotateY(180deg); */
+               /* transform: rotate(180deg); */
+             transform: perspective(600px) rotateX(360deg);
+               /* transform: rotateX(45deg) rotateY(45deg); */
+                transition: 3s;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

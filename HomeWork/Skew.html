@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Transform Skew</title>
+        <style>
+             div
+            {
+                background-color: yellow;
+                width: 200px;
+                height: 200px;
+                border-bottom: 5px solid green;
+                border-left: 5px solid red;
+                border-top: 5px solid blue;
+                border-right: 5px solid violet; 
+                margin-left: 600px;
+               margin-top: 200px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            div:hover{
+                 cursor: pointer;
+                 /* transform: skew(360deg); */
+                  transform: skewX(360deg);
+                   /* transform: skewY(360deg); */
+                 transition: 3s;
+            }
+        </style>
+    </head>
+    <body>
+        <div>SKEW</div>
+    </body>
+
+</html>
