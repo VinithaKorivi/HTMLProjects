@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>css traslate</title>
+        <style>
+            div{
+                margin: 100px;
+            }
+            .a{
+                width: 100px;
+                height: 100px;
+                background-color: red;   
+            }
+            .b{
+                width: 100px;
+                height: 100px;
+                background-color: cyan;   
+            }
+            .c{
+                width: 100px;
+                height: 100px;
+                background-color: green;   
+            }
+            .d{
+                width: 100px;
+                height: 100px;
+                background-color: blue;   
+            }
+            .a:hover{
+                background-color: green;
+                scale: 1;
+                transform: translate(100px);
+            }
+            .c:hover{
+                background-color: yellow;
+                scale: 1;
+                transform: scale(5);
+            }
+             .d:hover{
+                background-color: black;
+                scale: 1;
+                transform: skew(40deg);
+            }
+            .b:hover{
+                background-color: green;
+                scale: 2;
+                transform: rotate(135deg);
+                 transition: transform 1s ease, background-color 1s linear;
+            } 
+            .b {
+                
+            } 
+        </style>
+    </head>
+    <body><div>
+        <div class="a">Deer</div>
+        <div class="b">CAT</div>
+        <div class="c">DOG</div>
+        <div class="d">PIG</div>
+        </div>
+    </body>
+</html>
