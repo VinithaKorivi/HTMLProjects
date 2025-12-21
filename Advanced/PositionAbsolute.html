@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Position Absolute</title>
+    <style>
+        div {
+            color: green;
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+        }
+        .b{
+            background-color: red;
+            width: 400px;
+            height: 300px;
+            position: relative;
+        }
+        .c{
+            width: 350px;
+            height: 250px;
+            background-color: blue;
+             position: relative;
+        }
+        .d{
+           width: 300px;
+            height: 200px;
+            background-color: white;
+             position: relative;
+        }
+        .child{
+            width: 70px;
+            background-color: deeppink;
+            position: absolute;
+          bottom: 0px;
+          right: 0px;
+          margin: 0px;
+        }
+    </style>
+</head>
+
+<body>  
+    <div class="b">
+    <div class="c">
+    <div class="d">
+    <div class="child"> <p>ABSOLUTE</p> </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
