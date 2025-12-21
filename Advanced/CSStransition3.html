@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>CSS Absolute position in css</title>
+        <style>
+            div{
+                box-shadow: 0px 0px 60px 60px brown;
+                overflow: hidden;
+                height: 400px;
+                width: 350px;
+                position: relative;
+            }
+            div>img{
+            transform: translateX(50%);
+            transition: all 1s linear 0s;
+            }
+            div>img:hover{
+                transform: translateX(0%);
+            }
+            div>.content{
+                background-color: brown;
+                color: white;
+                position: absolute;
+                margin: -60px;
+                left: 0px;
+                transition: all 1s linear 0s;
+            }
+             div>.content:hover{
+                transform: translateX(-100%);
+             }
+        </style>
+    </head>
+    <div>
+        <img src="https://sp.yimg.com/ib/th/id/OIP.oKPP61ftKTBadVuxgWqNcAHaE7?pid=Api&w=148&h=148&c=7&dpr=2&rs=1" />
+        <div class="content">
+            <h1>ROSE</h1>
+            <p>10 Lines on Rose Flower: A rose is 
+                a woody annual flowering plant with over
+                 three hundred species and ten thousands of 
+                 cultivars. These flowers vary in size and form 
+                 and are usually large and flashy, in colours ranging from white through yellows and reds. 
+                 They also have a delightful 
+                fragrance, which varies according 
+                to the variety and climate conditions.
+                 Most rose species are native to Asia, 
+                smaller numbers being
+                native to America and a few to Europe and North-West Africa.
+                 The plants are mainly erect, and the stems are usually copiously armed 
+                 with prickles of various shapes and sizes, called thorns. Roses, in today’s world, 
+                 have acquired cultural importance in many societies.</p>
+        </div>
+    </div>
+</html>
