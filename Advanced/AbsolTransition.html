@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>CSS Absolute with transition property</title>
+        <style>
+            div{
+                box-shadow: 0px 0px  10px blue;
+                height: 300px;
+                width: 300px;
+                position: relative;
+                margin: 60px, auto;
+                overflow: hidden;
+            }
+            div:hover{
+                cursor: pointer;
+            }
+            div>#one{
+                background-color: rgba(255, 0, 0, 1.0);
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 30%; 
+                left: 30%;
+                transition: all 1s linear 3s;
+            }
+           div:hover>#one{
+                transform: translateY(-100%);
+              
+            }
+             div>#two{
+                background-color: rgba(0, 255, 0, 1.0);
+                position: absolute;
+                 width: 100px;
+                height: 100px;
+                top: 30%; 
+                left: 30%;
+                transition: all 1s linear 2s;
+            }
+           div:hover>#two{
+                transform: translateX(100%);
+            }
+            div>#three{
+                background-color: rgba(0, 0, 255, 1.0);
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 30%; 
+                left: 30%;
+                transition: all 1s linear 1s;
+            }
+           div:hover>#three{
+                transform: translateY(100%);
+            }
+              div>#four{
+                background-color: rgba(0, 0, 0, 1.0);
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 30%; 
+                left: 30%;
+                transition: all 1s linear 0s;
+            }
+           div:hover>#four{
+                transform: translatex(-100%);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <img src="https://up.yimg.com/ib/th/id/OIP.LV7XZoqOUVInMooemv02QwHaEK?pid=Api&rs=1&c=1&qlt=95&w=200&h=112" height="300px" width="300px"/>
+             <div id="one"></div>
+              <div id="two"></div>
+               <div id="three"></div>
+                <div id="four"></div>
+        </div>
+    </body>
+</html>
