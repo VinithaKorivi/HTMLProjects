@@ -1,0 +1,47 @@
+<html>
+    <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS MEDIA Files</title>
+       
+        <style>
+            @media(max-width:500px) {
+                body{
+                    background-color: red;
+                    color: yellow;
+                    display: flex;
+                }
+            }
+            @media (min-width:501px) and (max-width:700px) {
+                body{
+                    background-color: blue;
+                    color: white;
+                }
+                h1{
+                    text-align: center;
+                    margin-top: 200px;
+                }
+            }
+             @media (min-width:701px) and (max-width:900px) {
+                body{
+                    background-color: violet;
+                    color: black;
+                }
+                h1{
+                    text-align: right;
+                }
+            }
+              @media (min-width:901px) {
+                body{
+                    background-color: green;
+                    color: yellow;
+                }
+                h1{
+                    text-align: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS media queries</h1>
+    </body>
+</html>
