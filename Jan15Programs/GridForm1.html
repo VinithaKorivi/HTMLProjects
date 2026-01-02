@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Grid Form Creating</title>
+    <style>
+    .parent{
+        width: 1200px;
+        height: 1200px;
+        background-color: aquamarine;
+        display: grid;
+        grid-template-columns: repeat(4,300px);
+        grid-template-rows: repeat(4,400px);
+    }
+    .a{
+        background-color: red;
+        grid-column: 1/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    .b{
+        background-color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    .c{
+        background-color: rgb(226, 18, 188);
+         grid-column: 2/4;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    .d{
+        background-color: gold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    .e{
+        background-color: moccasin;
+        grid-column: 1/5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body><div class="parent">
+    <div class="a">Header</div>
+    <div class="b">Navbar</div>
+    <div class="c">Content</div>
+    <div class="d">Aside</div> 
+    <div class="e">Footer</div>
+    </div>
+</body>
+</html>
