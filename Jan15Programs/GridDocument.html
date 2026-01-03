@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>CSS Grid Document</title>
+        <style>
+            #parent-container{
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+                gap: 10px;
+                grid-template-rows: 80px 100px 200px;
+            }
+             #parent-container
+             div
+             {
+                color: white;
+                background-color: blue;
+             }
+             #child8{
+                /* grid-column-start: 2;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 4; */
+                /* grid-column: 2/4;
+                grid-row: 1/4; */
+                grid-area: 1/2/4/3;
+             }
+        </style>
+    </head>
+    <body>
+        <div id="Parent-container">
+           <div id="child1">1</div>
+           <div id="child2">2</div>
+           <div>3</div>
+           <div>4</div>
+           <div>5</div>
+           <div>6</div>
+           <div>7</div>
+           <div id="child8">8</div>
+           <div>9</div>
+        </div>
+    </body>
+</html>
