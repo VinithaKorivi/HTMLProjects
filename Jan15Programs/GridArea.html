@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Grid Area</title>
+    </head>
+    <style>
+        .parent{
+            color: red;
+            background-color: cyan;
+            display: grid;
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 200px 200px 200px;
+        }
+        .parent>div:nth-last-child(1){
+            background-color: green;
+            grid-column: 1/3;
+        }
+        .parent>div:nth-last-child(2){
+            background-color: black;
+        }
+        .parent>div:nth-last-child(3){
+            background-color: yellow;
+        }
+
+        .parent>div:nth-last-child(4){
+            background-color: red;
+        }
+        .parent>div:nth-last-child(5){
+            background-color: blue;
+        }
+    </style>
+    <body>
+        <div class="parent">
+            <div class="child1">Child1</div>
+            <div class="child2">child2</div>
+            <div class="child3">child3</div>
+            <div class="child4">child4</div>
+            <div class="child5">child5</div>
+        </div>
+    </body>
+</html>
