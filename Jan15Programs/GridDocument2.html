@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>Grid Document 2</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: opx;
+        }
+
+        nav {
+            background-color: greenyellow;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logoblock {
+            margin-left: 20px;
+            letter-spacing: 2px;
+        }
+
+        #logoblock::first-letter {
+            border: 2px solid red;
+            padding: 8px;
+            font-size: 30px;
+            text-transform: capitalize;
+            border-radius: 0px 10px 0px 10px;
+            margin-right: 2px;
+        }
+
+        #menublock {
+            display: flex;
+        }
+
+        #menublock ul li {
+            margin-right: 20px;
+            list-style-type: none;
+            position: relative;
+            padding: 6px;
+        }
+
+        #menublock ul li a {
+            text-decoration: none;
+        }
+
+        #dropdown {
+            position: absolute;
+            background-color: cyan;
+            width: 100px;
+            margin-top: 5px;
+            display: none;
+            border-radius: 8px;
+        }
+
+        #menublock ul li:hover #dropdown {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div id="logoblock">LiveStream</div>
+        <div id="menublock">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</li>
+                <li>
+                    <a href="#">More</a>
+                    <ul id="dropdown">
+                        <li><a href="">Feedback</a></li>
+                        <li><a href="">Subscribe</a></li>
+                        <li><a href="">Like</a></li>
+                        <li><a href="">Share</a></li>
+                    </ul>
+                    </li>
+                     </ul>
+                    <ul>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">SignUp</a></li>
+                    </ul>
+        </div>
+    </nav>
+</body>
+
+</html>
