@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buttons</title>
+<style>
+body{
+  display:flex;
+  gap:20px;
+  padding:20px;
+  font-family:Arial;
+}
+.btn{
+  padding:15px 30px;
+  border:none;
+  color:white;
+  cursor:pointer;
+  font-size:16px;
+  border-radius:8px;
+  transition:0.3s;
+}
+.blue{
+  background:#007bff;
+}
+.blue:hover{
+  box-shadow:0 5px 15px rgba(0,0,255,0.5);
+  transform:scale(1.1);
+}
+.red{
+  background:#d80000;
+}
+.red:hover{
+  box-shadow:0 5px 15px rgba(255,0,0,0.5);
+  transform:translateY(-5px);
+}
+</style>
+</head>
+<body>
+<button class="btn blue">Primary</button>
+<button class="btn red">Danger</button>
+</body>
+</html>
