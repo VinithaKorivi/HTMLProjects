@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Card Layout</title>
+<style>
+body{
+  font-family:Arial;
+  background:#eee;
+}
+.container{
+  display:flex;
+  gap:20px;
+  padding:20px;
+}
+.card{
+  background:white;
+  width:250px;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-10px);
+}
+.card img{
+  width:100%;
+  border-radius:8px;
+}
+.card h3{
+  margin:10px 0;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <img src="https://via.placeholder.com/250">
+    <h3>Product A</h3>
+    <p>Best product ever.</p>
+  </div>
+  <div class="card">
+    <img src="https://via.placeholder.com/250">
+    <h3>Product B</h3>
+    <p>Top rated product.</p>
+  </div>
+</div>
+</body>
+</html>
