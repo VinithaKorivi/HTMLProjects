@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table{
+  width:650px;
+  border-collapse:collapse;
+  font-family:Arial;
+}
+th,td{
+  padding:12px;
+  border-bottom:1px solid #ddd;
+}
+.status{
+  padding:5px 10px;
+  border-radius:8px;
+  color:white;
+  font-size:14px;
+}
+.ok{background:green;}
+.warn{background:orange;}
+.fail{background:red;}
+th{
+  background:#333;
+  color:white;
+}
+</style>
+</head>
+<body>
+<h2>Status Table</h2>
+<table>
+<tr><th>Server</th><th>Load</th><th>Status</th></tr>
+<tr><td>Server A</td><td>32%</td><td><span class="status ok">Online</span></td></tr>
+<tr><td>Server B</td><td>78%</td><td><span class="status warn">High Load</span></td></tr>
+<tr><td>Server C</td><td>0%</td><td><span class="status fail">Offline</span></td></tr>
+</table>
+</body>
+</html>
