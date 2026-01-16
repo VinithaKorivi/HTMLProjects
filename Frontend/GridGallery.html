@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grid Gallery</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+  gap:10px;
+  padding:10px;
+}
+img{
+  width:100%;
+  border-radius:10px;
+}
+</style>
+</head>
+<body>
+<div class="gallery">
+  <img src="https://via.placeholder.com/200">
+  <img src="https://via.placeholder.com/200">
+  <img src="https://via.placeholder.com/200">
+  <img src="https://via.placeholder.com/200">
+  <img src="https://via.placeholder.com/200">
+</div>
+</body>
+</html>
