@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hover Zoom</title>
+<style>
+.container{
+  position:relative;
+  width:300px;
+}
+img{
+  width:100%;
+  border-radius:10px;
+  transition:0.5s;
+}
+.caption{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  padding:10px;
+  color:white;
+  background:rgba(0,0,0,0.6);
+  opacity:0;
+  transition:0.5s;
+}
+.container:hover img{
+  transform:scale(1.1);
+}
+.container:hover .caption{
+  opacity:1;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="https://via.placeholder.com/300">
+  <div class="caption">Beautiful Image</div>
+</div>
+</body>
+</html>
