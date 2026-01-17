@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Layout</title>
+<style>
+.container{
+  display:flex;
+  gap:20px;
+}
+.box{
+  flex:1;
+  padding:20px;
+  background:lightgray;
+  border-radius:10px;
+}
+@media(max-width:600px){
+  .container{
+    flex-direction:column;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="box">Column A</div>
+  <div class="box">Column B</div>
+</div>
+</body>
+</html>
