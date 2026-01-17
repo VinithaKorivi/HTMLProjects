@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sticky Header</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+}
+header{
+  position:sticky;
+  top:0;
+  background:#333;
+  color:white;
+  padding:20px;
+  font-size:20px;
+  box-shadow:0 0 0 transparent;
+  transition:0.3s;
+}
+main{
+  height:2000px;
+  padding:20px;
+}
+header.scrolled{
+  box-shadow:0 5px 15px rgba(0,0,0,0.5);
+}
+</style>
+</head>
+<body>
+<header class="scrolled">My Sticky Header</header>
+<main>Scroll down...</main>
+</body>
+</html>
