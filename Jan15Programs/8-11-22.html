@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>document</title>
+	<style>
+		*
+		{
+			margin: 0px;
+			padding: 0s;
+		}
+		nav
+        {
+        	background-color: greenyellow;
+        	height: 80px;
+        	display: flex;
+        	justify-content: space-between;
+            align-items: center;
+        }
+        #logoblock
+        {
+        	margin-left: 20px;
+        	letter-spacing: 2px;
+        }
+        #logoblock::first-letter
+        {
+        	border: 2px solid crimson;
+        	padding: 8px;
+        	border-radius: 0px 10px 0px 10px;
+        	margin-right: 2px;
+        	text-transform: capitalize;
+        }
+        #menublock>ul
+        {
+        	display: flex;
+        }
+        #menublock>ul>li
+        {
+        	margin-left: 50px;
+        	list-style-type: none;
+        	position: relative;
+        	padding: 6px;
+        }
+        #menublock>ul>li>a
+        {
+        	text-decoration: none;
+
+        }
+        #dropdown
+        {
+        	position: absolute;
+        	background-color: cyan;
+        	width: 100px;
+        	margin-top: 5px;
+        	border-radius: 8px;
+        	display: none;
+        }
+        #dropdown
+        {
+            
+        }
+        #menublock>ul>li:hover #dropdown
+        {
+        	display: block;
+        }
+	</style>
+</head>
+<body>
+	<nav>
+    <div id="logoblock">livestream</div>
+    <div id="menublock">
+    	<ul>
+    		<li><a href="">home</a></li>
+    		<li><a href="">contact</a></li>
+    		<li><a href="">more</a>
+    			<ul id="dropdown">
+    			<li>feedback</li>
+    			<li>subscribe</li>
+    			<li>like</li>
+    			<li>share</li>
+    		</ul>
+    		</li>
+    		<li><a href="">login</a></li>
+    		<li><a href="">signup</a></li>
+    	</ul>
+    </div>
+</nav>
+</body>
+</html>
