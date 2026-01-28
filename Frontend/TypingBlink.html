@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Blinking with typing effect</title>
+    <style>
+        .role-blink {
+            font-size: 32px;
+            color: red;
+            position: relative;
+            height: 40px;
+            overflow: hidden;
+        }
+
+        .role-blink span {
+            position: absolute;
+            left: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            border-right: 2px solid red;
+            animation: typing 2s steps(20) forwards,
+                hide 8s infinite;
+        }
+
+        /* Role delays */
+        .role-blink span:nth-child(1) {
+            animation-delay: 0s, 0s;
+        }
+
+        .role-blink span:nth-child(2) {
+            animation-delay: 3s, 3s;
+        }
+
+        .role-blink span:nth-child(3) {
+            animation-delay: 6s, 6s;
+        }
+
+        .role-blink span:nth-child(4) {
+            animation-delay: 9s, 9s;
+        }
+
+        /* Typing animation */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Hide after typing */
+        @keyframes hide {
+
+            0%,
+            20% {
+                opacity: 1;
+            }
+
+            21%,
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="role-blink">
+        <span>Java Developer</span>
+        <span>Web Developer</span>
+        <span>Software Engineer</span>
+        <span>Full Stack Developer</span>
+    </h2>
+</body>
+
+</html>
