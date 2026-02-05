@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Keyframes Example 7</title>
+<style>
+.menu {
+  width: 200px;
+  height: 100vh;
+  background-color: teal;
+  position: absolute;
+  animation: slideMenu 3s infinite;
+}
+
+@keyframes slideMenu {
+  0% {
+    left: -200px;
+  }
+
+  50% {
+    left: 0px;
+  }
+
+  100% {
+    left: -200px;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="menu"></div>
+
+</body>
+</html>
