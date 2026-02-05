@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Keyframes Example 5</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  padding: 20px 40px;
+  font-size: 20px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+</style>
+</head>
+<body>
+
+<button>Click Me</button>
+
+</body>
+</html>
