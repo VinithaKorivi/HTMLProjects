@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Keyframes Example 1</title>
+<style>
+body {
+  background-color: #f0f0f0;
+  height: 100vh;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: moveBox;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moveBox {
+  0% {
+    left: 0px;
+    background-color: red;
+  }
+
+  25% {
+    left: 200px;
+    background-color: orange;
+  }
+
+  50% {
+    left: 400px;
+    background-color: yellow;
+  }
+
+  75% {
+    left: 200px;
+    background-color: green;
+  }
+
+  100% {
+    left: 0px;
+    background-color: red;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>
