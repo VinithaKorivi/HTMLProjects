@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Relative Position</title>
+<style>
+body {
+    font-family: sans-serif;
+    background: #eee;
+}
+.container {
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+}
+.relative-box {
+    position: relative;
+    top: 30px;
+    left: 40px;
+    width: 200px;
+    height: 100px;
+    background: dodgerblue;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+.box {
+    width: 200px;
+    height: 100px;
+    background: gray;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
+p {
+    color: #555;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Relative Position</h2>
+    <div class="relative-box">Relative</div>
+    <div class="box">Normal Box</div>
+    <p>Relative moves from its normal position</p>
+</div>
+</body>
+</html>
