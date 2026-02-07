@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Absolute Position</title>
+<style>
+body {
+    font-family: Arial;
+}
+.parent {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background: #ddd;
+    margin: auto;
+    margin-top: 50px;
+}
+.absolute-box {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    width: 150px;
+    height: 100px;
+    background: crimson;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+p {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="parent">
+    <div class="absolute-box">Absolute</div>
+</div>
+<p>Positioned relative to parent</p>
+</body>
+</html>
