@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="box"
+style="width:200px;height:200px;border:2px solid;">
+Drop Here
+</div>
+
+<img id="drag1"
+src="image.jpg"
+draggable="true"
+width="100">
+
+<script>
+document.getElementById("drag1").addEventListener("dragstart", drag);
+
+function drag(event) {
+event.dataTransfer.setData("text", event.target.id);
+}
+
+document.getElementById("box").addEventListener("dragover", allowDrop);
+function allowDrop(event) {
+event.preventDefault();
+}
+
+document.getElementById("box").addEventListener("drop", drop);
+function drop(event) {
+event.preventDefault();
+var data = event.dataTransfer.getData("text");
+event.target.appendChild(document.getElementById(data));
+}
+</script>
+
+</body>
+</html>
