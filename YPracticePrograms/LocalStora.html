@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="name">
+<button onclick="save()">Save</button>
+
+<script>
+function save() {
+let n = document.getElementById("name").value;
+localStorage.setItem("username", n);
+}
+
+document.write(localStorage.getItem("username"));
+</script>
+
+</body>
+</html>
