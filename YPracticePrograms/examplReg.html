@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Registration Form</title>
+<style>
+body{font-family:Arial;background:#f2f2f2;}
+form{width:500px;margin:auto;background:white;padding:20px;border-radius:10px;}
+input,select,textarea{width:100%;margin:8px 0;padding:8px;}
+</style>
+</head>
+<body>
+
+<form action="/submit" method="post" autocomplete="on">
+
+<fieldset>
+<legend>User Registration</legend>
+
+<label>Full Name</label>
+<input type="text" name="fullname"
+       placeholder="Enter your name"
+       required minlength="3"
+       data-user="name">
+
+<label>Email</label>
+<input type="email" name="email"
+       placeholder="Enter email"
+       required>
+
+<label>Password</label>
+<input type="password" name="password"
+       pattern="(?=.*\d)(?=.*[A-Z]).{8,}"
+       title="Must contain 8 characters, one uppercase and one number"
+       required>
+
+<label>Age</label>
+<input type="number" name="age" min="18" max="60">
+
+<label>Gender</label>
+<input type="radio" name="gender" value="male" required> Male
+<input type="radio" name="gender" value="female"> Female
+
+<label>Skills</label>
+<input type="checkbox" name="skills" value="html"> HTML
+<input type="checkbox" name="skills" value="css"> CSS
+<input type="checkbox" name="skills" value="js"> JavaScript
+
+<label>Country</label>
+<select name="country">
+<option value="">Select</option>
+<option>India</option>
+<option>USA</option>
+</select>
+
+<label>Upload Resume</label>
+<input type="file" multiple>
+
+<label>About You</label>
+<textarea rows="4" maxlength="200"></textarea>
+
+<input type="submit" value="Register">
+
+</fieldset>
+</form>
+
+</body>
+</html>
