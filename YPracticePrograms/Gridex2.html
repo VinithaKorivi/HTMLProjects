@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Card Grid</title>
+<style>
+body{font-family:Arial;margin:0;background:#fafafa;}
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:20px;
+}
+.card{
+background:white;
+padding:20px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+.card:hover{transform:scale(1.05);}
+img{width:100%;border-radius:10px;}
+h3{margin:10px 0;}
+button{
+background:#333;color:white;border:none;
+padding:10px 15px;border-radius:5px;
+cursor:pointer;
+}
+button:hover{background:orange;}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="card"><img src="https://via.placeholder.com/200">
+<h3>Product 1</h3><p>₹500</p><button>Buy</button></div>
+<div class="card"><img src="https://via.placeholder.com/200">
+<h3>Product 2</h3><p>₹700</p><button>Buy</button></div>
+<div class="card"><img src="https://via.placeholder.com/200">
+<h3>Product 3</h3><p>₹900</p><button>Buy</button></div>
+<div class="card"><img src="https://via.placeholder.com/200">
+<h3>Product 4</h3><p>₹400</p><button>Buy</button></div>
+</div>
+</body>
+</html>
