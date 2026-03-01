@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+    <style>
+        table{
+            width: 500px;
+            height: 200px;
+            border: none;
+            border-collapse: collapse;
+        }
+        th{
+            color: aliceblue;
+            background: black;
+        }
+        th,td{
+            border-bottom: 1px solid blue;
+        }
+        .status{
+        padding: 5px 10px;
+        border-radius: 8px;
+        color: white;
+        }
+        .a{background: red;}
+         .b{background: green;}
+          .c{background: blue;}
+    </style>
+    <body>
+        <h1>Status Table</h1>
+        <table>
+            <tr><th>Product</th><th>Price</th><th>status</th></tr>
+            <tr><td>Carrot A</td><td>45</td><td><span class="status a">Online</span></td></tr>
+             <tr><td>Beetroot B</td><td>85</td><td><span class="status b">Offline</span></td></tr>
+              <tr><td>Tomato C</td><td>15</td><td><span class="status c">Online</span></td></tr>
+        </table>
+    </body>
+</html>
