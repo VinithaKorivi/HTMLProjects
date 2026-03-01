@@ -1,0 +1,61 @@
+<html>
+    <head>
+<style>
+    body{
+        margin: 0px;
+        width: 250px;
+        height: 250px;
+        padding: 20px;
+        border: 5px dotted black;
+    }
+    body:hover{
+        box-shadow: 0px 0px 50px 10px red;
+    }
+    .a{
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        margin-top: 100px;
+        transition: width ease-out 2s, background-color 8s ;
+    }
+    .a:hover{
+       width: 100px;
+       height: 100px;
+       background-color: blueviolet;
+    }
+    .b{
+        background-color: blue;
+        width: 50px;
+        height: 50px;
+        margin-top: 100px;
+    }
+    .b:hover{
+        background-color: yellow;
+        cursor: pointer;
+         transform: translate(50px, -50px);
+         transition: 4s;
+    }
+    .c{
+         background-color: green;
+        width: 50px;
+        height: 50px;
+        margin-top: 150px;
+    }
+    .c:hover{
+        width: 300px;
+        height: 300px;
+        background-color: violet;
+        transition: 5s;
+        transform: rotate(360deg);
+    }
+</style>
+    </head>
+    <body>
+        <div>
+            <img src="https://up.yimg.com/ib/th/id/OIP.j39ZJ39tZpfc5TO-EfgStwHaE4?pid=Api&rs=1&c=1&qlt=95&w=188&h=123" width="250px" height="250px"/>
+        </div>
+        <div class="a">Red</div>
+        <div class="b">Blue</div>
+        <div class="c">green</div>
+    </body>
+</html>
