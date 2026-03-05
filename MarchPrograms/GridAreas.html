@@ -1,0 +1,64 @@
+<html>
+  <head>
+  <style>
+    .container{
+      display: grid;
+      grid-template-areas: "header header" "sidebar content" "footer footer";
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: 80px 1fr 60px;
+      height: 100vh;
+    }
+    header{
+      grid-area: header;
+      background-color: black;
+      color: antiquewhite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    aside{
+      grid-area: sidebar;
+      background-color: aquamarine;
+      padding: 20px;
+    }
+    main{
+      grid-area: content;
+      background-color: bisque;
+      padding: 20px;
+    }
+    footer{
+      grid-area: footer;
+       background-color: black;
+      color: antiquewhite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card{
+       background-color: white;
+       padding: 20px;
+       margin: 10px 0;
+       border-radius: 8px;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+    <header>My Home</header>
+    <aside>
+      <h3>Menu</h3>
+      <div class="card">Breakfast</div>
+      <div class="card">Lunch</div>
+      <div class="card">Dinner</div>
+    </aside>
+    <main>
+      <h3>Welcome</h3>
+      <p>These are various Sweets</p>
+       <div class="card">Laddu</div>
+      <div class="card">Jilebi</div>
+      <div class="card">Payasam</div>
+    </main>
+    <footer>Exit</footer>
+    </div>
+  </body>
+</html>
