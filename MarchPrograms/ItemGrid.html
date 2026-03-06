@@ -1,0 +1,52 @@
+<html>
+  <head>
+   <style>
+    .container{
+      display: grid;
+      padding: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 20px;
+    }
+    .card{
+      background-color: aqua;
+      padding: 20px;
+      border-radius: 30px;
+      text-align: center;
+    }
+    button{
+      color: black;
+      background-color: green;
+    }
+    .price{
+      color: brown;
+    }
+    button:hover{
+      background-color: hotpink;
+      border-radius: 50px;
+      transform: scale(1.2);
+    }
+   </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="card">
+      <h1 class="item">Gold</h1>
+      <p>Per one Gram Gold</p>
+      <p class="Price">₹20,000</p>
+      <button>Buy</button><i>Or</i><button>Sale</button>
+    </div>
+   <div class="card">
+      <h1 class="item">Platinum</h1>
+      <p>Per one Gram Platinum</p>
+      <p class="Price">₹10,000</p>
+      <button>Buy</button><i>Or</i><button>Sale</button>
+    </div>
+    <div class="card">
+      <h1 class="item">Silver</h1>
+      <p>Per one Gram Silver</p>
+      <p class="Price">₹500</p>
+      <button>Buy</button><i>Or</i><button>Sale</button>
+    </div>
+    </div>
+  </body>
+</html>
