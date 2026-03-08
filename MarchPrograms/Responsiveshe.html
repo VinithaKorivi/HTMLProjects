@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <style>
+      .container{
+        display: flex;
+        gap: 10px;
+      }
+   .a{
+    flex: 1;
+    color: white;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+   }
+   @media(max-width:600px){
+    .container{
+      flex-direction: column;
+    }
+   }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="a">Danger Zone</div>
+    <div class="a">Safe Zone</div>
+    <div class="a">Warning Zone</div>
+    </div>
+  </body>
+</html>
