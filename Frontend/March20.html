@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Zoom</title>
+<style>
+.container{
+  position:relative;
+  width:300px;
+}
+img{
+  width:100%;
+  border-radius:10px;
+  transition:0.5s;
+}
+.caption{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  padding:10px;
+  color:white;
+  background:red;
+  opacity:0;
+  transition:0.5s;
+}
+.container:hover img{
+  transform: rotate(360deg);
+}
+.container:hover .caption{
+  opacity:1;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="https://sp.yimg.com/ib/th?&id=ODL.c92d8eb0575f1d563f0a411e60fbb0d1&w=116&h=146&c=4&dpr=2&rs=1">
+  <div class="caption">Vinni Image</div>
+</div>
+</body>
+</html>
