@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 20px;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color: #575757;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .menu {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">MySite</div>
+    <div class="menu">
+        <a href="#">Home services</a>
+        <a href="#">About services</a>
+        <a href="#">Services</a>
+        <a href="#">Contact services</a>
+    </div>
+</div>
+
+</body>
+</html>
