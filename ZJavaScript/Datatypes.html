@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>The data types of Javascript</title>
+    </head>
+    <body>
+        <script>
+            let a=20;
+            console.log(a);
+            function datatypes(){
+                let num=50;
+                let name="vinitha";
+                let hasgirlfriend=true;
+                let undef;
+                console.log(num, typeof num);
+                console.log(name, typeof name);
+                console.log(hasgirlfriend, typeof hasgirlfriend);
+                console.log(undef, typeof undef);
+                let bigNumber = 1234567890123455863246325678901234567890n;
+                 console.log(bigNumber, typeof bigNumber);
+                 const id = Symbol("id");
+                 const user={
+                   name:"vinitha",
+                   [id]:101
+                 };
+                 console.log(user[id], typeof user);
+                 let a=prompt("Enter your fav no");
+                 console.log(a);
+                 let x=Number(prompt("Enter first vaue"));
+                   let y=Number(prompt("Enter second vaue"));
+                  console.log("addition of 2 no is"+x+y)
+            }
+            datatypes();
+        </script>
+    </body>
+</html>
