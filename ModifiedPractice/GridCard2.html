@@ -1,0 +1,82 @@
+<html>
+    <head></head>
+    <style>
+        body{
+            margin: 0px;
+            font-family: cursive;
+        }
+        header{
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: chartreuse;
+            color: black;
+            grid-area: header;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: "header header" "sidebar content" "footer footer";
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: 100px 1fr 100px;
+            height: 100vh;
+        }
+        footer{
+             padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: hotpink;
+            color: black;
+            grid-area: footer;
+        }
+        .aside{
+            background-color: blue;
+            padding: 20px;
+            color: wheat;
+            grid-area: sidebar;
+            
+        }
+        .a{
+            background-color: white;
+            color: black;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .Subjects{
+             background-color: crimson;
+            padding: 20px;
+            color: wheat;
+            grid-area: content;
+        }
+        .b{
+            background-color: white;
+            color: black;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <div class="container">
+        <header>My World</header>
+        <div class="aside">
+            <h3>Routine</h3>
+            <div class="a">Walking</div>
+            <div class="a">Eating</div>
+            <div class="a">Studying</div>
+        </div>
+        <div class="Subjects">
+            <h3>Subjects</h3>
+            <div class="b">Java</div>
+             <div class="b">HTML</div>
+              <div class="b">SQL</div>
+        </div>
+        <footer>The End</footer>
+        </div>
+    </body>
+</html>

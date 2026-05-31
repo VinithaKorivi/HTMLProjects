@@ -1,0 +1,68 @@
+<html>
+
+<head></head>
+<style>
+    body {
+        margin: 0px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns:200px 1fr;
+        grid-template-rows:70px 1fr;
+        height: 100vh;
+    }
+
+    .sidebar {
+        background: red;
+        height: 210px;
+    }
+
+    header {
+        background: black;
+        color: white;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #main {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(200px 1fr)); */
+        grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+        gap: 20px;
+        padding: 20px;
+        background-color: blueviolet;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px gray;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Dashboard</h1>
+            <p>Home</p>
+            <p>Users</p>
+            <p>Settings</p>
+        </div>
+        <div>
+            <header>Admin Panel</header>
+            <div id="main">
+                <div class="card">Customers</div>
+                <div class="card">Revenue</div>
+                <div class="card">Orders</div>
+                <div class="card">Reports</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
