@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Overlapping boxes</title>
+    <style>
+        .container {
+            position: relative;
+            height: 400px;
+            width: 300px;
+            /* background-color: aquamarine; */
+        }
+
+        .b1 {
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+            top: 300px;
+            left: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .b2 {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            top: 220px;
+            left: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .b3 {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            top: 220px;
+            left: 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         .b4 {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            top: 430px;
+            left: 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         .b5 {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: cyan;
+            top: 430px;
+            left: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="b1">I Like</div>
+        <div class="b2">Mango</div>
+        <div class="b3">Guava</div>
+        <div class="b4">PineApple</div>
+        <div class="b5">Star Fruit</div>
+    </div>
+</body>
+
+</html>
