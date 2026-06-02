@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Creating login with pic</title>
+    </head>
+    <style>
+        .container{
+            background-color: chartreuse;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .le{
+            background: url("https://picsum.photos/600")  center/cover;
+        }
+        .ri{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        }
+        input, button{
+            margin: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+            box-shadow: 0px 0px 5px 10px white;
+        }
+        ::placeholder{
+            color: white;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="le"></div>
+            <div class="ri">
+                <h1>Sign In</h1>
+                <input type="text" placeholder="Username">
+                <input type="Password" placeholder="Password">
+                <button>Submit</button>
+            </div>
+        </div>
+    </body>
+</html>
