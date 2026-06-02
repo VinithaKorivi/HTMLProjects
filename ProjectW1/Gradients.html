@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>About gradients</title>
+        <style>
+            .a{
+                height: 200px;
+                width: 300px;
+                background: linear-gradient(to right, red, transparent 100%);
+                border: 5px solid black;
+                border-radius: 50%;
+            }
+            .container{
+                margin: 10px;
+            }
+            .a, .b, button, .circle, .square{
+             margin-bottom: 20px;
+            }
+            .b{
+                height: 200px;
+                width: 700px;
+                border: 5px solid black;
+                background: linear-gradient(to bottom, yellow 0%, red 30%, brown 60%, transparent 100%);
+            }
+            button{
+                background-color: green;
+                padding: 15px 40px;
+                border-radius: 50px;
+                color: white;
+                box-shadow: 0px 0px 20px 10px green;
+                margin-top: 20px;
+               
+            }
+            .circle{
+                width: 200px;
+                height: 200px;
+                background: radial-gradient(ellipse, rgb(61, 61, 171, 1) 0%, rgb(228, 12, 12, 1) 25%, rgb(10, 234, 10) 85%);
+                border-radius: 100%;
+                margin-top: 20px;
+            }
+            .square{
+                width: 200px;
+                height: 200px;
+                background: radial-gradient(circle at 20% 20%, rgb(31, 4, 241), rgb(238, 7, 199), #ffffff);
+            }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+         <div class="a"></div> 
+       <div class="b"></div>
+       <button>Like&Subscribe</button>
+       <div class="circle"></div>
+       <div class="square"></div>
+      </div>
+    </body>
+</html>
